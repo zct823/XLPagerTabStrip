@@ -23,41 +23,58 @@
 // THE SOFTWARE.
 
 import Foundation
-import UIKit
 
 public struct IndicatorInfo {
 
     public var title: String?
     public var image: UIImage?
+    public var imageURL: String?
+    public var disabledImage: UIImage?
     public var highlightedImage: UIImage?
     public var accessibilityLabel: String?
     public var userInfo: Any?
+    public var tag: Int?
+    public var disabled: Bool?
     
-    public init(title: String?) {
+    public init(title: String?, tag: Int? = nil, disabled: Bool? = nil) {
         self.title = title
         self.accessibilityLabel = title
+        self.tag = tag
+        self.disabled = disabled
     }
     
-    public init(image: UIImage?, highlightedImage: UIImage? = nil, userInfo: Any? = nil) {
+    public init(image: UIImage?, imageURL: String? = nil, highlightedImage: UIImage? = nil, disabledImage: UIImage? = nil, userInfo: Any? = nil, tag: Int? = nil, disabled: Bool? = nil) {
         self.image = image
+        self.imageURL = imageURL
         self.highlightedImage = highlightedImage
+        self.disabledImage = disabledImage
         self.userInfo = userInfo
+        self.tag = tag
+        self.disabled = disabled
     }
     
-    public init(title: String?, image: UIImage?, highlightedImage: UIImage? = nil, userInfo: Any? = nil) {
+    public init(title: String?, imageURL: String? = nil, image: UIImage?, highlightedImage: UIImage? = nil, disabledImage: UIImage? = nil, userInfo: Any? = nil, tag: Int? = nil, disabled: Bool? = nil) {
         self.title = title
         self.accessibilityLabel = title
         self.image = image
+        self.imageURL = imageURL
         self.highlightedImage = highlightedImage
+        self.disabledImage = disabledImage
         self.userInfo = userInfo
+        self.tag = tag
+        self.disabled = disabled
     }
     
-    public init(title: String?, accessibilityLabel:String?, image: UIImage?, highlightedImage: UIImage? = nil, userInfo: Any? = nil) {
+    public init(title: String?, accessibilityLabel:String?, image: UIImage?, imageURL: String? = nil, highlightedImage: UIImage? = nil, disabledImage: UIImage? = nil, userInfo: Any? = nil, tag: Int? = nil, disabled: Bool? = nil) {
         self.title = title
         self.accessibilityLabel = accessibilityLabel
         self.image = image
+        self.imageURL = imageURL
         self.highlightedImage = highlightedImage
+        self.disabledImage = disabledImage
         self.userInfo = userInfo
+        self.tag = tag
+        self.disabled = disabled
     }
 
 }

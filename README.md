@@ -1,3 +1,5 @@
+<p>Attention: This is a forked from <a href="https://github.com/xmartlabs/XLPagerTabStrip">the original</a>, with some additional changes. Use it with your own intention!</p>
+
 ![XLPagerTabStripView](https://raw.githubusercontent.com/xmartlabs/XLPagerTabStrip/master/XLPagerTabTrip.png)
 
 <p align="left">
